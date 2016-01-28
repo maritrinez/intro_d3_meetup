@@ -1,0 +1,21 @@
+body {
+  font-size: 40px;
+  color: #96005F;
+  background: #8CC3BD;
+  font-family: sans-serif;
+}
+
+svg {
+  background: #F49F24;
+}
+
+g {
+  background: #EBE087;
+}
+
+/*chart*/
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

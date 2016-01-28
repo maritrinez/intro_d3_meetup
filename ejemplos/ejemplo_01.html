@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- Load d3.js library -->
+    <script src="assets/js/d3.v3.min.js"></script>
+    <!-- Load external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ej_01.css"> 
+  </head>
+
+  <body>
+    <div id='main'>
+      <h1>Su web vacía de contenido</h1>
+      <p><a href="http://www.quackit.com/html/tutorial/html_links.cfm">Más info</a></p>
+
+      <div class="content image">
+        <h3>Esto es una imagen</h3>
+        <img src="assets/images/pantallazo.png"> </img>
+      </div>
+
+      <div class="content text">
+        <p>Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available.</p>
+        <p id="highlight"> Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+        <p> Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+        <p id="highlight">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin.</p>
+      </div>
+      
+    </div>
+
+    <div id='footer'>
+      <p>No dudes en contactar conmigo!</p>
+      <p>Escríbeme a <a href="mailto:whatever@whatever.com">
+whatever@whatever.com</a>.</p>
+    </div>
+
+
+     
+   
+    <script>
+      
+      console.log(d3.selectAll('div'))
+      console.log(d3.selectAll('#highlight'))
+      console.log(d3.select('.content.text'))
+
+    </script>
+
+   
+
+  </body>
+</html>

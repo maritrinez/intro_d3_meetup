@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- Load d3.js library -->
+    <script src="assets/js/d3.v3.min.js"></script>
+    <!-- Load external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"> 
+  </head>
+
+  <body>
+    <svg width="960" height="500"></svg>
+
+
+    <script>
+
+      var svg = d3.select('svg');
+
+      svg.append('rect')
+          .attr('x', 0)
+          .attr('y', 30)
+          .attr('width', 500)
+          .attr('height', 100);
+
+      svg.append('circle')
+          .attr('cx', 700)
+          .attr('cy', 250)
+          .attr('r', 150);
+
+      svg.append('line')
+          .attr('x1', 0)
+          .attr('y1', 350)
+          .attr('x2', 520)
+          .attr('y2', 300)
+          .style('stroke', 'black');
+
+      svg.append('text')
+          .attr('x', 0)
+          .attr('y', 450)
+          .text('Esto es un texto svg');
+    </script>
+  </body>
+</html>
